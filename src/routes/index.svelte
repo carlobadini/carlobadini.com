@@ -11,8 +11,12 @@
   .f {
     display: flex;
   }
-  .f > div {
+  /* .f > div {
     flex: 1 0 0;
+  } */
+  img {
+    margin-right: 2.5rem;
+    max-width: 350px;
   }
 </style>
 
@@ -21,7 +25,9 @@
 </svelte:head>
 
 <div class="f">
-  <div>Image</div>
+  <div>
+    <img alt="" src="/carlo.png" />
+  </div>
   <div>
     <h1>👋 Hi there!</h1>
     <p>I’m Carlo. Welcome to my own little corner of the internet.</p>
