@@ -8,6 +8,9 @@
   * {
     border: 1px solid rgba(0, 0, 0, 0.1);
   }
+  main {
+    margin-left: 20rem;
+  }
 </style>
 
 <Header {segment} />
