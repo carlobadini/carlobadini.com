@@ -1,51 +1,54 @@
 <style>
-  h1,
-  figure,
-  p {
-    text-align: center;
-    margin: 0 auto;
+  hr {
+    width: 5rem;
+    margin: 0;
+    border-width: 0.1rem;
+    border-color: #95389e;
   }
-
   h1 {
-    font-size: 2.8em;
-    text-transform: uppercase;
-    font-weight: 700;
-    margin: 0 0 0.5em 0;
+    margin-top: 0;
   }
-
-  figure {
-    margin: 0 0 1em 0;
+  .f {
+    display: flex;
   }
-
-  img {
-    width: 100%;
-    max-width: 400px;
-    margin: 0 0 1em 0;
-  }
-
-  p {
-    margin: 1em auto;
-  }
-
-  @media (min-width: 480px) {
-    h1 {
-      font-size: 4em;
-    }
+  .f > div {
+    flex: 1 0 0;
   }
 </style>
 
 <svelte:head>
-  <title>Sapper project template</title>
+  <title>Carlo Badini</title>
 </svelte:head>
 
-<h1>Great success!</h1>
-
-<figure>
-  <figcaption>Have fun with Sapper!</figcaption>
-</figure>
-
-<p>
-  <strong>
-    Try editing this file (src/routes/index.svelte) to test live reloading.
-  </strong>
-</p>
+<div class="f">
+  <div>Image</div>
+  <div>
+    <h1>👋 Hi there!</h1>
+    <p>I’m Carlo. Welcome to my own little corner of the internet.</p>
+    <hr />
+    <p>
+      I’m an entrepreneur at heart. In my early 20s I started my first business
+      and bootstrapped it profitably to 40+ employees while studying full-time
+      at the University of Bern in Switzerland. I invested in some quite
+      successful startups. I give regular talks and speeches at various forums
+      and universities. I currently serve on one board. And I’m actively
+      involved in a handful of nonprofits. I received numerous awards and
+      recognitions for my work. I work out 5-6 times a week, try to eat healthy
+      and I consider myself an avid reader. I work hard. And I work a lot.
+    </p>
+    <p>
+      All of this may sound impressive by traditional measures. Know, though,
+      that this is - while being true - also a very incomplete picture of me.
+      This whole site is composed with the intent of marketing myself. All my
+      countless mistakes, failures and bad decisions are conveniently sweeped
+      under the rug. But rest assured that there are many, many mistakes I
+      commited, bad turns I took and poor decisions I made. Someday I will
+      publish an exhaustive list of all my failures.
+    </p>
+    <p>
+      With all that being said, take everything here (or anywhere else for that
+      matter) with a grain (or two, or three) of salt.
+    </p>
+    <p>Cheers!</p>
+  </div>
+</div>
