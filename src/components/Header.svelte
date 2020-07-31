@@ -3,7 +3,20 @@
 </script>
 
 <style>
-
+  header {
+    position: fixed;
+    background-color: #fff;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    overflow: auto;
+    width: 20rem;
+    padding: 2rem;
+    box-sizing: border-box;
+  }
+  h1 {
+    margin-top: 0;
+  }
 </style>
 
 <header>
