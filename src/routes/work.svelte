@@ -269,6 +269,44 @@
     following news outlets reported about us. Press inquiries can be made to:
     <a href="mailto:media@carlobadini.com">media@carlobadini.com</a>
   </p>
+  <ul class="logos">
+    <li>
+      <div class="img" style="background-image: url(/logos/forbes.svg)" />
+      <div>Forbes</div>
+    </li>
+    <li>
+      <div class="img" style="background-image: url(/logos/letemps.png)" />
+      <div>Le Temps</div>
+    </li>
+    <li>
+      <div class="img" style="background-image: url(/logos/migros.png)" />
+      <div>Migros Magazin</div>
+    </li>
+    <li>
+      <div class="img" style="background-image: url(/logos/db.png)" />
+      <div>Der Bund</div>
+    </li>
+    <li>
+      <div class="img" style="background-image: url(/logos/nzz.png)" />
+      <div>Neue Zürcher Zeitung</div>
+    </li>
+    <li>
+      <div class="img" style="background-image: url(/logos/20m.jpg)" />
+      <div>20 Minutes</div>
+    </li>
+    <li>
+      <div class="img" style="background-image: url(/logos/blick.png)" />
+      <div>Blick</div>
+    </li>
+    <li>
+      <div class="img" style="background-image: url(/logos/rt.png)" />
+      <div>RT</div>
+    </li>
+    <li>
+      <div class="img" style="background-image: url(/logos/tagblatt.png)" />
+      <div>Tagblatt</div>
+    </li>
+  </ul>
   <h2>Volunteer Work 💖</h2>
   <ul class="list">
     <li>
