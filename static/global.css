@@ -11,3 +11,39 @@ body {
 a {
   color: inherit;
 }
+
+.list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.list li {
+  display: flex;
+}
+.list li div:first-child {
+  margin-right: 1rem;
+}
+.list li .img {
+  text-align: center;
+  line-height: 3rem;
+  width: 3rem;
+  display: block;
+  height: 3rem;
+  border-radius: 100%;
+  background-color: #fff;
+}
+.list li div:last-child div:first-child {
+  font-weight: bold;
+  font-size: 110%;
+}
+.list li div:last-child div:nth-child(2) {
+  opacity: 0.5;
+  margin-top: 0.25rem;
+  margin-bottom: 1rem;
+}
+.list li div:last-child div:nth-child(3) {
+  color: #4d5a6d;
+}
+.list li + li {
+  margin-top: 2.5rem;
+}
