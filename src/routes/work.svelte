@@ -29,7 +29,9 @@
   <ul class="list">
     <li>
       <div>
-        <div class="img">1</div>
+        <div class="img">
+          <img alt="" src="/logos/koj.svg" />
+        </div>
       </div>
       <div>
         <div>Founder/CEO Koj AG</div>
@@ -43,7 +45,9 @@
     </li>
     <li>
       <div>
-        <div class="img">1</div>
+        <div class="img">
+          <img alt="" src="/logos/cleverclip.svg" />
+        </div>
       </div>
       <div>
         <div>Founder/CEO Koj AG</div>

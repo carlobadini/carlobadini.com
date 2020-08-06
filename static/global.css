@@ -29,8 +29,17 @@ a {
   width: 3rem;
   display: block;
   height: 3rem;
+  position: relative;
   border-radius: 100%;
   background-color: #fff;
+}
+.list li .img img {
+  max-width: 1.5rem;
+  max-height: 1.5rem;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
 }
 .list li div:last-child div:first-child {
   font-weight: bold;
