@@ -217,6 +217,52 @@
     Inquiries can be made to:
     <a href="mailto:talks@carlobadini.com">talks@carlobadini.com</a>
   </p>
+  <ul class="logos">
+    <li>
+      <div class="img" style="background-image: url(/logos/gk.png)" />
+      <div>Stauffacherpreis – 1st place</div>
+    </li>
+    <li>
+      <div class="img" style="background-image: url(/logos/ub.png)" />
+      <div>University of Bern</div>
+    </li>
+    <li>
+      <div class="img" style="background-image: url(/logos/sif.png)" />
+      <div>Swiss Innovation Forum</div>
+    </li>
+    <li>
+      <div class="img" style="background-image: url(/logos/sef.jpg)" />
+      <div>Swiss Economic Forum</div>
+    </li>
+    <li>
+      <div class="img" style="background-image: url(/logos/ur.png)" />
+      <div>Rochester University</div>
+    </li>
+    <li>
+      <div class="img" style="background-image: url(/logos/uf.png)" />
+      <div>University of Fribourg</div>
+    </li>
+    <li>
+      <div class="img" style="background-image: url(/logos/fs.png)" />
+      <div>Fifteen Seconds Festival</div>
+    </li>
+    <li>
+      <div class="img" style="background-image: url(/logos/ws.png)" />
+      <div>Web Summit Lisbon</div>
+    </li>
+    <li>
+      <div class="img" style="background-image: url(/logos/connecta.png)" />
+      <div>Connecta Bern</div>
+    </li>
+    <li>
+      <div class="img" style="background-image: url(/logos/se.png)" />
+      <div>Suisse Emex</div>
+    </li>
+    <li>
+      <div class="img" style="background-image: url(/logos/sw.png)" />
+      <div>Startup Weekend Zurich</div>
+    </li>
+  </ul>
   <h2>Press Coverage 📺</h2>
   <p>
     The work of my team and me get’s occasionally mentioned in the press. The
@@ -228,7 +274,7 @@
     <li>
       <div>
         <div class="img">
-          <img alt="" src="/logos/daktiv.png" />
+          <img alt="" src="/logos/eo.png" />
         </div>
       </div>
       <div>
@@ -246,7 +292,7 @@
     <li>
       <div>
         <div class="img">
-          <img alt="" src="/logos/daktiv.png" />
+          <img alt="" src="/logos/wef.png" />
         </div>
       </div>
       <div>

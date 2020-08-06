@@ -56,3 +56,40 @@ a {
 .list li + li {
   margin-top: 2.5rem;
 }
+
+ul.logos {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  width: 900px;
+}
+@media (max-width: 900px) {
+  ul.logos {
+    width: 100%;
+  }
+}
+ul.logos li {
+  position: relative;
+  white-space: nowrap;
+  background-color: #fff;
+  padding: 0.75rem 1rem 0.75rem 4rem;
+  margin-right: 1rem;
+  width: auto;
+  margin-bottom: 1rem;
+}
+ul.logos li .img {
+  position: absolute;
+  width: 3rem;
+  left: 0.5rem;
+  top: 0.5rem;
+  bottom: 0.5rem;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+  transform: scale(0.75);
+}
+ul.logos li div {
+  display: inline-block;
+}
