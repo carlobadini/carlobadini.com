@@ -47,7 +47,10 @@
     nav:target {
       display: block;
     }
-    nav:target + .close {
+    nav:target + .menu + .contact {
+      display: block;
+    }
+    nav:target + .menu + .contact + .close {
       display: block;
     }
   }
@@ -147,7 +150,6 @@
       </li>
     </ul>
   </nav>
-  <a href="#top" class="close">Close menu</a>
   <a href="#nav" class="menu">Menu</a>
   <div class="contact">
     <a target="_blank" rel="noopener" href="mailto:hello@carlobadini.com">
@@ -172,4 +174,5 @@
       <span>LinkedIn</span>
     </a>
   </div>
+  <a href="#top" class="close">Close menu</a>
 </header>

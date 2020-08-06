@@ -20,6 +20,7 @@
   @media (max-width: 900px) {
     img {
       margin: 0 auto 2.5rem;
+      max-width: 100%;
     }
     .f {
       display: block;
