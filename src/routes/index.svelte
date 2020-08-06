@@ -11,12 +11,19 @@
   .f {
     display: flex;
   }
-  /* .f > div {
-    flex: 1 0 0;
-  } */
   img {
+    margin: 0 auto;
     margin-right: 2.5rem;
     max-width: 350px;
+    display: block;
+  }
+  @media (max-width: 900px) {
+    img {
+      margin: 0 auto 2.5rem;
+    }
+    .f {
+      display: block;
+    }
   }
 </style>
 

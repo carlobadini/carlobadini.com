@@ -14,7 +14,7 @@
   }
   @media (max-width: 1300px) {
     main {
-      margin-left: 0;
+      margin: 2.5rem;
     }
   }
 </style>

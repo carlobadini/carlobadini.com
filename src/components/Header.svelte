@@ -23,6 +23,9 @@
     padding: 0.5rem 1rem;
     border-radius: 0.2rem;
   }
+  .close {
+    display: none;
+  }
   .menu {
     display: none;
     position: absolute;
@@ -38,7 +41,6 @@
       width: 100%;
     }
     nav,
-    .close,
     .contact {
       display: none;
     }
