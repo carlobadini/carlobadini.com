@@ -17,6 +17,38 @@
     flex-direction: column;
     justify-content: space-between;
   }
+  .menu,
+  .close {
+    background-color: #eee;
+    padding: 0.5rem 1rem;
+    border-radius: 0.2rem;
+  }
+  .menu {
+    display: none;
+    position: absolute;
+    right: 2.5rem;
+    top: 1.75rem;
+  }
+  @media (max-width: 1300px) {
+    .menu {
+      display: inline-block;
+    }
+    header {
+      position: static;
+      width: 100%;
+    }
+    nav,
+    .close,
+    .contact {
+      display: none;
+    }
+    nav:target {
+      display: block;
+    }
+    nav:target + .close {
+      display: block;
+    }
+  }
   h1 {
     margin-top: 0;
   }
@@ -73,7 +105,7 @@
       psychology, chestnuts
     </p>
   </div>
-  <nav>
+  <nav id="nav">
     <ul>
       <li>
         <a aria-current={segment === undefined ? 'page' : undefined} href=".">
@@ -113,7 +145,9 @@
       </li>
     </ul>
   </nav>
-  <div>
+  <a href="#top" class="close">Close menu</a>
+  <a href="#nav" class="menu">Menu</a>
+  <div class="contact">
     <a target="_blank" rel="noopener" href="mailto:hello@carlobadini.com">
       <span aria-hidden="true">💌</span>
       <span>hello@carlobadini.com</span>
