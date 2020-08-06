@@ -50,12 +50,44 @@
         </div>
       </div>
       <div>
-        <div>Founder/CEO Koj AG</div>
-        <div>2020 - today</div>
+        <div>Founder/Owner Cleverclip GmbH</div>
+        <div>2013 - today</div>
         <div>
-          Koj is an interior design subscription service. With Koj you get your
-          apartment fully furnished by a professional interior designer and rent
-          high quality furniture on a monthly subscription.
+          Cleverclip is a design and communication agency that produces
+          explainer videos and interactive experiences for customers such as:
+          McKinsey, Lufthansa, UEFA, Swisscom and many more.
+        </div>
+      </div>
+    </li>
+    <li>
+      <div>
+        <div class="img">
+          <img alt="" src="/logos/comvation.svg" />
+        </div>
+      </div>
+      <div>
+        <div>Board Member Comvation AG</div>
+        <div>2019 - today</div>
+        <div>
+          Comvation is a well established web agency from Thun, Switzerland.
+          Comvation develops websites, web applications and online marketing
+          solutions for SMEs and corporations in Switzerland.
+        </div>
+      </div>
+    </li>
+    <li>
+      <div>
+        <div class="img">
+          <img alt="" src="/logos/daktiv.png" />
+        </div>
+      </div>
+      <div>
+        <div>Board Member Daktiv AG</div>
+        <div>2016 - today</div>
+        <div>
+          Daktiv is a live communication agency from Bern, Switzerland. Daktiv
+          develops roadshows, exhibitions and live events for customers such as
+          SUVA, Coop, Volvo and Swatch.
         </div>
       </div>
     </li>
