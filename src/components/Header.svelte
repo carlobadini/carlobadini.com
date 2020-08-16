@@ -124,14 +124,14 @@
           <span>Work</span>
         </a>
       </li>
-      <li>
+      <!-- <li>
         <a
           aria-current={segment === 'learning' ? 'page' : undefined}
           href="learning">
           <span aria-hidden="true">📖</span>
           <span>Learning &amp; Education</span>
         </a>
-      </li>
+      </li> -->
       <li>
         <a
           aria-current={segment === 'investments' ? 'page' : undefined}
@@ -140,14 +140,14 @@
           <span>Investments</span>
         </a>
       </li>
-      <li>
+      <!-- <li>
         <a
           aria-current={segment === 'body-mind' ? 'page' : undefined}
           href="body-mind">
           <span aria-hidden="true">🏃‍♂️</span>
           <span>Body &amp; Mind</span>
         </a>
-      </li>
+      </li> -->
     </ul>
   </nav>
   <a href="#nav" class="menu">Menu</a>
