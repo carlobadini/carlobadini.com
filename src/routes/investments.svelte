@@ -30,7 +30,7 @@
     <li>
       <div>
         <div class="img">
-          <img alt="" src="/logos/koj.svg" />
+          <img alt="" src="/logos/blink.png" />
         </div>
       </div>
       <div>
@@ -45,7 +45,7 @@
     <li>
       <div>
         <div class="img">
-          <img alt="" src="/logos/koj.svg" />
+          <img alt="" src="/logos/kingfluencers.png" />
         </div>
       </div>
       <div>
@@ -60,7 +60,7 @@
     <li>
       <div>
         <div class="img">
-          <img alt="" src="/logos/koj.svg" />
+          <img alt="" src="/logos/retinai.png" />
         </div>
       </div>
       <div>
@@ -75,7 +75,7 @@
     <li>
       <div>
         <div class="img">
-          <img alt="" src="/logos/koj.svg" />
+          <img alt="" src="/logos/legal-i.png" />
         </div>
       </div>
       <div>
@@ -90,7 +90,7 @@
     <li>
       <div>
         <div class="img">
-          <img alt="" src="/logos/koj.svg" />
+          <img alt="" src="/logos/daktiv.png" />
         </div>
       </div>
       <div>
