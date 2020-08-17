@@ -25,7 +25,7 @@ jobs:
       - name: Build static site
         run: npm run export
       - name: Deploy
-        uses: koj-co/deploy-pr-action@v1.0.0
+        uses: koj-co/deploy-pr-action@v1.0.1
         with:
           prefix: carlobadaini
           distDir: __sapper__/export
