@@ -1,3 +1,7 @@
+<script>
+  import t from "../get-data";
+</script>
+
 <style>
   h1 {
     margin-top: 0;
@@ -19,18 +23,17 @@
 </style>
 
 <svelte:head>
-  <title>Work · Carlo Badini</title>
+  <title>{t('Text', 'work.title')} · {t('Text', 'name')}</title>
 </svelte:head>
 
 <div class="text">
-  <h1>Work 💻</h1>
+  <h1>{t('Text', 'work.title')}</h1>
   <blockquote>
     <p>
-      “I’m a greater believer in luck, and I find the harder I work the more I
-      have of it.” – Thomas Jefferson
+      {@html t('Text', 'work.subtitle')}
     </p>
   </blockquote>
-  <h2>Experiences 👨‍💻</h2>
+  <h2>{t('Text', 'work.experiences.title')}</h2>
   <ul class="list">
     <li>
       <div>
@@ -97,7 +100,7 @@
       </div>
     </li>
   </ul>
-  <h2>Awards and Recognition 🏆</h2>
+  <h2>{t('Text', 'work.awards.title')}</h2>
   <ul class="list">
     <li>
       <div>
@@ -209,13 +212,9 @@
       </div>
     </li>
   </ul>
-  <h2>Speaking Engagements 🎤</h2>
+  <h2>{t('Text', 'work.speaking.title')}</h2>
   <p>
-    From time to time I get invited to talk at universities, forums and events
-    about the things I love. Here’s an incomplete list of places I talked about
-    startups, leadership, remote work, storytelling and digital marketing.
-    Inquiries can be made to:
-    <a href="mailto:talks@carlobadini.com">talks@carlobadini.com</a>
+    {@html t('Text', 'work.speaking.content')}
   </p>
   <ul class="logos">
     <li>
@@ -263,11 +262,9 @@
       <div>Startup Weekend Zurich</div>
     </li>
   </ul>
-  <h2>Press Coverage 📺</h2>
+  <h2>{t('Text', 'work.press.title')}</h2>
   <p>
-    The work of my team and me get’s occasionally mentioned in the press. The
-    following news outlets reported about us. Press inquiries can be made to:
-    <a href="mailto:media@carlobadini.com">media@carlobadini.com</a>
+    {@html t('Text', 'work.press.content')}
   </p>
   <ul class="logos">
     <li>
@@ -307,7 +304,7 @@
       <div>Tagblatt</div>
     </li>
   </ul>
-  <h2>Volunteer Work 💖</h2>
+  <h2>{t('Text', 'work.volunteer.title')}</h2>
   <ul class="list">
     <li>
       <div>

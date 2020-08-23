@@ -8,5 +8,5 @@ module.exports = (table, term) => {
         return row.fields?.key === term;
       })?.fields?.Content ?? ""
     ).replace(/<br \/>/g, "<br><br>");
-  return snarkdown(data[table] ?? "").replace(/<br \/>/g, "<br><br>");
+  return data[table][0] ?? "";
 };
