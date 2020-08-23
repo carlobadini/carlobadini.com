@@ -5,7 +5,7 @@ import { promises } from "fs";
 cosmicSync("data");
 
 const tables = [
-  "TeXT",
+  "Text",
   "Experiences",
   "Awards",
   "Speaking",
@@ -37,7 +37,7 @@ const fetchData = async () => {
         fetchNextPage();
       });
   }
-  await promises.writeFile(join("."), JSON.stringify(data));
+  await promises.writeFile(join(".", "data.json"), JSON.stringify(data));
 };
 
 fetchData();
