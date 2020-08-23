@@ -56,6 +56,7 @@
           class="i"
           style={`background-image: url("https://tse2.mm.bing.net/th?q=${encodeURIComponent(`${book.fields.Name} ${book.fields.Author} book cover`)}&w=70&h=100&c=7&rs=1&p=0&dpr=3&pid=1.7&mkt=en-IN&adlt=moderate")`} />
         <div>{book.fields.Name}</div>
+        <div>{book.fields.Author}</div>
       </li>
     {/each}
   </ul>
@@ -65,8 +66,9 @@
       <li>
         <div
           class="i"
-          style={`background-image: url("https://tse2.mm.bing.net/th?q=${encodeURIComponent(`${podcast.fields.Name} podcast cover`)}&w=70&h=70&c=7&rs=1&p=0&dpr=3&pid=1.7&mkt=en-IN&adlt=moderate")`} />
+          style={`background-image: url("https://tse2.mm.bing.net/th?q=${encodeURIComponent(`${podcast.fields.Name} ${podcast.fields.Author} podcast cover`)}&w=70&h=70&c=7&rs=1&p=0&dpr=3&pid=1.7&mkt=en-IN&adlt=moderate")`} />
         <div>{podcast.fields.Name}</div>
+        <div>{podcast.fields.Author}</div>
       </li>
     {/each}
   </ul>
