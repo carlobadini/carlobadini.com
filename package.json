@@ -3,9 +3,10 @@
   "description": "carlobadini",
   "version": "0.0.0",
   "scripts": {
-    "dev": "sapper dev",
-    "build": "sapper build --legacy",
-    "export": "sapper export --legacy && echo carlo.koj.co > __sapper__/export/CNAME",
+    "fetch": "ts-node tooling/fetch-data.ts",
+    "dev": "npm run fetch && sapper dev",
+    "build": "npm run fetch && sapper build --legacy",
+    "export": "npm run fetch && sapper export --legacy && echo carlo.koj.co > __sapper__/export/CNAME",
     "start": "node __sapper__/build",
     "cy:run": "cypress run",
     "cy:open": "cypress open",
