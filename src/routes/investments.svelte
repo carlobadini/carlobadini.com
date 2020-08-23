@@ -19,7 +19,7 @@
 </style>
 
 <svelte:head>
-  <title>{t('Text', 'investments.title')} · Carlo Badini</title>
+  <title>{t('Text', 'investments.title')} · {t('Text', 'name')}</title>
 </svelte:head>
 
 <div class="text">

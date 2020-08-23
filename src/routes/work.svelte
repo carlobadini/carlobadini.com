@@ -35,311 +35,81 @@
   </blockquote>
   <h2>{t('Text', 'work.experiences.title')}</h2>
   <ul class="list">
-    <li>
-      <div>
-        <div class="img">
-          <img alt="" src="/logos/koj.svg" />
-        </div>
-      </div>
-      <div>
-        <div>Founder/CEO Koj AG</div>
-        <div>2020–today</div>
+    {#each t('Experiences') as experience}
+      <li>
         <div>
-          Koj is an interior design subscription service. With Koj you get your
-          apartment fully furnished by a professional interior designer and rent
-          high quality furniture on a monthly subscription.
+          <div class="img">
+            <img alt="" src={experience.fields.Icon[0].url} />
+          </div>
         </div>
-      </div>
-    </li>
-    <li>
-      <div>
-        <div class="img">
-          <img alt="" src="/logos/cleverclip.svg" />
-        </div>
-      </div>
-      <div>
-        <div>Founder/Owner Cleverclip GmbH</div>
-        <div>2013–today</div>
         <div>
-          Cleverclip is a design and communication agency that produces
-          explainer videos and interactive experiences for customers such as:
-          McKinsey, Lufthansa, UEFA, Swisscom and many more.
+          <div>{experience.fields.Position}, {experience.fields.Company}</div>
+          <div>{experience.fields.Date}</div>
+          <div>{experience.fields.Description}</div>
         </div>
-      </div>
-    </li>
-    <li>
-      <div>
-        <div class="img">
-          <img alt="" src="/logos/comvation.svg" />
-        </div>
-      </div>
-      <div>
-        <div>Board Member Comvation AG</div>
-        <div>2019–today</div>
-        <div>
-          Comvation is a well established web agency from Thun, Switzerland.
-          Comvation develops websites, web applications and online marketing
-          solutions for SMEs and corporations in Switzerland.
-        </div>
-      </div>
-    </li>
-    <li>
-      <div>
-        <div class="img">
-          <img alt="" src="/logos/daktiv.png" />
-        </div>
-      </div>
-      <div>
-        <div>Board Member Daktiv AG</div>
-        <div>2016–today</div>
-        <div>
-          Daktiv is a live communication agency from Bern, Switzerland. Daktiv
-          develops roadshows, exhibitions and live events for customers such as
-          SUVA, Coop, Volvo and Swatch.
-        </div>
-      </div>
-    </li>
+      </li>
+    {/each}
   </ul>
   <h2>{t('Text', 'work.awards.title')}</h2>
   <ul class="list">
-    <li>
-      <div>
-        <div class="img">
-          <img alt="" src="/logos/ey.png" />
-        </div>
-      </div>
-      <div>
-        <div>Ernst & Young Entrepreneur of the Year – Nominated</div>
-        <div>2018</div>
+    {#each t('Awards') as award}
+      <li>
         <div>
-          EY Entrepreneur Of The Year is a global program that recognises
-          entrepreneurial achievement among individuals and companies that
-          demonstrate vision, leadership and success.
+          <div class="img">
+            <img alt="" src={award.fields.Icon[0].url} />
+          </div>
         </div>
-      </div>
-    </li>
-    <li>
-      <div>
-        <div class="img">
-          <img alt="" src="/logos/forbes.svg" />
-        </div>
-      </div>
-      <div>
-        <div>Forbes Magazine – 30 Under 30</div>
-        <div>2018</div>
         <div>
-          With 30 Under 30 Forbes features every year the brightest young
-          entrepreneurs, leaders, and stars worldwide.
+          <div>{award.fields.Award}</div>
+          <div>{award.fields.Year}</div>
+          <div>{award.fields.Description}</div>
         </div>
-      </div>
-    </li>
-    <li>
-      <div>
-        <div class="img">
-          <img alt="" src="/logos/sef.jpg" />
-        </div>
-      </div>
-      <div>
-        <div>Swiss Economic Award – Finalist</div>
-        <div>2017</div>
-        <div>
-          The Swiss Economic Award is the most prestigious startup award in
-          Switzerland and recognises outstanding achievements in business.
-        </div>
-      </div>
-    </li>
-    <li>
-      <div>
-        <div class="img">
-          <img alt="" src="/logos/cwt.png" />
-        </div>
-      </div>
-      <div>
-        <div>Bernese Youth Award – 1st prize</div>
-        <div>2015</div>
-        <div>
-          Since 1995 the Burger community of Bern awards the Bernese Youth Award
-          for outstanding young talents.
-        </div>
-      </div>
-    </li>
-    <li>
-      <div>
-        <div class="img">
-          <img alt="" src="/logos/gsea.png" />
-        </div>
-      </div>
-      <div>
-        <div>
-          Global Student Entrepreneur Awards – 1st place European champion
-        </div>
-        <div>2015</div>
-        <div>
-          The Global Student Entrepreneur Awards (GSEA) is the premier global
-          competition for students who own and operate a for-profit business
-          while attending college or university.
-        </div>
-      </div>
-    </li>
-    <li>
-      <div>
-        <div class="img">
-          <img alt="" src="/logos/ssa.png" />
-        </div>
-      </div>
-      <div>
-        <div>Swiss Startups Awards – Public’s Choice Award</div>
-        <div>2013</div>
-        <div>
-          Cleverclip received the Swiss Startups Awards, Public’s Choice Award
-          for the best business idea of 2013.
-        </div>
-      </div>
-    </li>
-    <li>
-      <div>
-        <div class="img">
-          <img alt="" src="/logos/gk.png" />
-        </div>
-      </div>
-      <div>
-        <div>Stauffacherpreis – 1st place</div>
-        <div>2011</div>
-        <div>
-          The “Stauffacherpreis” is a yearly award handed out by the Gymnasium
-          Kirchenfeld for the best final paper among all graduates.
-        </div>
-      </div>
-    </li>
+      </li>
+    {/each}
   </ul>
   <h2>{t('Text', 'work.speaking.title')}</h2>
   <p>
     {@html t('Text', 'work.speaking.content')}
   </p>
   <ul class="logos">
-    <li>
-      <div class="img" style="background-image: url(/logos/gk.png)" />
-      <div>Stauffacherpreis – 1st place</div>
-    </li>
-    <li>
-      <div class="img" style="background-image: url(/logos/ub.png)" />
-      <div>University of Bern</div>
-    </li>
-    <li>
-      <div class="img" style="background-image: url(/logos/sif.png)" />
-      <div>Swiss Innovation Forum</div>
-    </li>
-    <li>
-      <div class="img" style="background-image: url(/logos/sef.jpg)" />
-      <div>Swiss Economic Forum</div>
-    </li>
-    <li>
-      <div class="img" style="background-image: url(/logos/ur.png)" />
-      <div>Rochester University</div>
-    </li>
-    <li>
-      <div class="img" style="background-image: url(/logos/uf.png)" />
-      <div>University of Fribourg</div>
-    </li>
-    <li>
-      <div class="img" style="background-image: url(/logos/fs.png)" />
-      <div>Fifteen Seconds Festival</div>
-    </li>
-    <li>
-      <div class="img" style="background-image: url(/logos/ws.png)" />
-      <div>Web Summit Lisbon</div>
-    </li>
-    <li>
-      <div class="img" style="background-image: url(/logos/connecta.png)" />
-      <div>Connecta Bern</div>
-    </li>
-    <li>
-      <div class="img" style="background-image: url(/logos/se.png)" />
-      <div>Suisse Emex</div>
-    </li>
-    <li>
-      <div class="img" style="background-image: url(/logos/sw.png)" />
-      <div>Startup Weekend Zurich</div>
-    </li>
+    {#each t('Speaking') as speaking}
+      <li>
+        <div
+          class="img"
+          style={`background-image: url("${speaking.fields.Icon[0].url}")`} />
+        <div>{speaking.fields.Name}</div>
+      </li>
+    {/each}
   </ul>
   <h2>{t('Text', 'work.press.title')}</h2>
   <p>
     {@html t('Text', 'work.press.content')}
   </p>
   <ul class="logos">
-    <li>
-      <div class="img" style="background-image: url(/logos/forbes.svg)" />
-      <div>Forbes</div>
-    </li>
-    <li>
-      <div class="img" style="background-image: url(/logos/letemps.png)" />
-      <div>Le Temps</div>
-    </li>
-    <li>
-      <div class="img" style="background-image: url(/logos/migros.png)" />
-      <div>Migros Magazin</div>
-    </li>
-    <li>
-      <div class="img" style="background-image: url(/logos/db.png)" />
-      <div>Der Bund</div>
-    </li>
-    <li>
-      <div class="img" style="background-image: url(/logos/nzz.png)" />
-      <div>Neue Zürcher Zeitung</div>
-    </li>
-    <li>
-      <div class="img" style="background-image: url(/logos/20m.jpg)" />
-      <div>20 Minutes</div>
-    </li>
-    <li>
-      <div class="img" style="background-image: url(/logos/blick.png)" />
-      <div>Blick</div>
-    </li>
-    <li>
-      <div class="img" style="background-image: url(/logos/rt.png)" />
-      <div>RT</div>
-    </li>
-    <li>
-      <div class="img" style="background-image: url(/logos/tagblatt.png)" />
-      <div>Tagblatt</div>
-    </li>
+    {#each t('Press') as press}
+      <li>
+        <div
+          class="img"
+          style={`background-image: url("${press.fields.Icon[0].url}")`} />
+        <div>{press.fields.Name}</div>
+      </li>
+    {/each}
   </ul>
   <h2>{t('Text', 'work.volunteer.title')}</h2>
   <ul class="list">
-    <li>
-      <div>
-        <div class="img">
-          <img alt="" src="/logos/eo.png" />
-        </div>
-      </div>
-      <div>
-        <div>Entrepreneurs Organisation – GSEA committee</div>
-        <div>2017–today</div>
+    {#each t('Volunteer') as volunteer}
+      <li>
         <div>
-          The Global Student Entrepreneur Awards (GSEA) is the premier global
-          competition for students who own and operate a for-profit business
-          while attending college or university. Since 2017 I have served on the
-          committee in Switzerland and helped plan and organise the yearly
-          award.
+          <div class="img">
+            <img alt="" src={volunteer.fields.Icon[0].url} />
+          </div>
         </div>
-      </div>
-    </li>
-    <li>
-      <div>
-        <div class="img">
-          <img alt="" src="/logos/wef.png" />
-        </div>
-      </div>
-      <div>
-        <div>World Economic Forum - Global Shapers</div>
-        <div>2015–today</div>
         <div>
-          The Global Shapers Community is an initiative from the World Economic
-          Forum. The GS are a network of young people driving dialogue, action
-          and change. As part of the member’s office I’m responsible for
-          recruiting and selecting outstanding people to join our community.
+          <div>{volunteer.fields.Name}</div>
+          <div>{volunteer.fields.Year}</div>
+          <div>{volunteer.fields.Description}</div>
         </div>
-      </div>
-    </li>
+      </li>
+    {/each}
   </ul>
 </div>
