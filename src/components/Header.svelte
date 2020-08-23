@@ -1,4 +1,5 @@
 <script>
+  import t from "../get-data";
   export let segment;
 </script>
 
@@ -104,63 +105,64 @@
 
 <header>
   <div>
-    <h1>Carlo Badini</h1>
+    <h1>
+      {@html t('Text', 'name')}
+    </h1>
     <p>
-      Entrepreneur, Early Stage Investor. likes tech, design, economics,
-      psychology, chestnuts
+      {@html t('Text', 'description')}
     </p>
   </div>
   <nav id="nav">
     <ul>
       <li>
-        <a aria-current={segment === undefined ? 'page' : undefined} href=".">
+        <a aria-current={segment === undefined ? 'page' : undefined} href="/">
           <span aria-hidden="true">🤝</span>
           <span>Intro</span>
         </a>
       </li>
       <li>
-        <a aria-current={segment === 'work' ? 'page' : undefined} href="work">
+        <a aria-current={segment === 'work' ? 'page' : undefined} href="/work/">
           <span aria-hidden="true">💻</span>
           <span>Work</span>
         </a>
       </li>
-      <!-- <li>
+      <li>
         <a
           aria-current={segment === 'learning' ? 'page' : undefined}
-          href="learning">
+          href="/learning/">
           <span aria-hidden="true">📖</span>
           <span>Learning &amp; Education</span>
         </a>
-      </li> -->
+      </li>
       <li>
         <a
           aria-current={segment === 'investments' ? 'page' : undefined}
-          href="investments">
+          href="/investments/">
           <span aria-hidden="true">💸</span>
           <span>Investments</span>
         </a>
       </li>
-      <!-- <li>
+      <li>
         <a
           aria-current={segment === 'body-mind' ? 'page' : undefined}
-          href="body-mind">
+          href="/body-mind/">
           <span aria-hidden="true">🏃‍♂️</span>
           <span>Body &amp; Mind</span>
         </a>
-      </li> -->
+      </li>
     </ul>
   </nav>
   <a href="#nav" class="menu">Menu</a>
   <div class="contact">
-    <a target="_blank" rel="noopener" href="mailto:hello@carlobadini.com">
+    <a target="_blank" rel="noopener" href={`mailto:${t('Text', 'email')}`}>
       <span aria-hidden="true">💌</span>
-      <span>hello@carlobadini.com</span>
+      <span>{t('Text', 'email')}</span>
     </a>
     <a
       target="_blank"
       rel="noopener"
       class="linkedin"
-      href="https://www.linkedin.com/in/carlobadini/">
+      href={t('Text', 'linkedin')}>
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
         <path
           d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9

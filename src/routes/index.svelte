@@ -33,7 +33,7 @@
 </style>
 
 <svelte:head>
-  <title>Carlo Badini</title>
+  <title>{t('Text', 'name')}</title>
 </svelte:head>
 
 <div class="f">
@@ -41,9 +41,15 @@
     <img alt="" src="/carlo.png" />
   </div>
   <div>
-    <h1>{t('Text', 'about.title')}</h1>
-    <p>{t('Text', 'about.subtitle')}</p>
+    <h1>
+      {@html t('Text', 'about.title')}
+    </h1>
+    <p>
+      {@html t('Text', 'about.subtitle')}
+    </p>
     <hr />
-    {t('Text', 'about.content')}
+    <p>
+      {@html t('Text', 'about.content')}
+    </p>
   </div>
 </div>

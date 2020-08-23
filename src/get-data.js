@@ -1,11 +1,12 @@
 const data = require("../data.json");
+const snarkdown = require("snarkdown");
 
 module.exports = (table, term) => {
   if (term)
-    return (
+    return snarkdown(
       data[table][0].find((row) => {
         return row.fields?.key === term;
       })?.fields?.Content ?? ""
-    );
-  return data[table] ?? "";
+    ).replace(/<br \/>/g, "<br><br>");
+  return snarkdown(data[table] ?? "").replace(/<br \/>/g, "<br><br>");
 };
