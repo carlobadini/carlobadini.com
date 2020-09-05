@@ -28,7 +28,7 @@
   </p>
   <iframe
     title="Sleep data"
-    src="https://carlobadini.github.io/life/?repo=CarloBadini/life&api=rescuetime-time-tracking&latest=top-overview.days" />
+    src="https://carlobadini.github.io/life/?repo=CarloBadini/life&api=rescuetime-time-tracking&latest=top-overview.weeks" />
   <p>
     {@html t('Text', 'body.productivity.content')}
   </p>
@@ -40,5 +40,5 @@
   </p>
   <iframe
     title="Sleep data"
-    src="https://carlobadini.github.io/life/?repo=CarloBadini/life&api=oura-sleep&latest=total.days&color=%2395389E" />
+    src="https://carlobadini.github.io/life/?repo=CarloBadini/life&api=oura-sleep&latest=total.weeks&color=%2395389E" />
 </div>
