@@ -20,7 +20,25 @@
   <p>
     {@html t('Text', 'body.subtitle')}
   </p>
-  <!-- <h2>{$t('Text', 'body.productivity.title')}</h2> -->
-  <!-- <p>{$t('Text', 'body.productivity.subtitle')}</p>
-  <p>{$t('Text', 'body.productivity.content')}</p> -->
+  <h2>
+    {@html t('Text', 'body.productivity.title')}
+  </h2>
+  <p>
+    {@html t('Text', 'body.productivity.subtitle')}
+  </p>
+  <iframe
+    title="Sleep data"
+    src="https://carlobadini.github.io/life/?repo=CarloBadini/life&api=rescuetime-time-tracking&latest=top-overview.days" />
+  <p>
+    {@html t('Text', 'body.productivity.content')}
+  </p>
+  <h2>
+    {@html t('Text', 'body.sleep.title')}
+  </h2>
+  <p>
+    {@html t('Text', 'body.sleep.subtitle')}
+  </p>
+  <iframe
+    title="Sleep data"
+    src="https://carlobadini.github.io/life/?repo=CarloBadini/life&api=oura-sleep&latest=total.days&color=%2395389E" />
 </div>

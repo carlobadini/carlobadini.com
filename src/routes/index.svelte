@@ -8,6 +8,7 @@
     margin: 0;
     border-width: 0.1rem;
     border-color: #95389e;
+    background-color: #95389e;
   }
   h1 {
     margin-top: 0;
@@ -37,9 +38,7 @@
 </svelte:head>
 
 <div class="f">
-  <div>
-    <img alt="" src="/carlo.png" />
-  </div>
+  <div><img alt="" src="/carlo.png" /></div>
   <div>
     <h1>
       {@html t('Text', 'about.title')}
