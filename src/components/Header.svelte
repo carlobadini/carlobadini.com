@@ -1,6 +1,7 @@
 <script>
   import t from "../get-data";
   export let segment;
+  let show = false;
 </script>
 
 <style>
@@ -20,9 +21,11 @@
   }
   .menu,
   .close {
-    background-color: #eee;
-    padding: 0.5rem 1rem;
-    border-radius: 0.2rem;
+    padding: 0;
+    background: none;
+    border: none;
+    line-height: 1;
+    font-size: 200%;
   }
   .close {
     display: none;
@@ -31,7 +34,7 @@
     display: none;
     position: absolute;
     right: 2.5rem;
-    top: 1.75rem;
+    top: 3rem;
   }
   @media (max-width: 1300px) {
     .menu {
@@ -45,15 +48,9 @@
     .contact {
       display: none;
     }
-    nav:target {
-      display: block;
-    }
-    nav:target + .menu + .contact {
-      display: block;
-    }
-    nav:target + .menu + .contact + .close {
-      display: block;
-    }
+  }
+  nav.show {
+    display: block;
   }
   h1 {
     margin-top: 0;
@@ -112,16 +109,22 @@
       {@html t('Text', 'description')}
     </p>
   </div>
-  <nav id="nav">
+  <nav id="nav" class={show ? 'show' : ''}>
     <ul>
       <li>
-        <a aria-current={segment === undefined ? 'page' : undefined} href="/">
+        <a
+          aria-current={segment === undefined ? 'page' : undefined}
+          on:click={() => (show = false)}
+          href="/">
           <span aria-hidden="true">🤝</span>
           <span>Intro</span>
         </a>
       </li>
       <li>
-        <a aria-current={segment === 'work' ? 'page' : undefined} href="/work/">
+        <a
+          aria-current={segment === 'work' ? 'page' : undefined}
+          on:click={() => (show = false)}
+          href="/work/">
           <span aria-hidden="true">💻</span>
           <span>Work</span>
         </a>
@@ -129,6 +132,7 @@
       <li>
         <a
           aria-current={segment === 'learning' ? 'page' : undefined}
+          on:click={() => (show = false)}
           href="/learning/">
           <span aria-hidden="true">📖</span>
           <span>Learning &amp; Education</span>
@@ -137,6 +141,7 @@
       <li>
         <a
           aria-current={segment === 'investments' ? 'page' : undefined}
+          on:click={() => (show = false)}
           href="/investments/">
           <span aria-hidden="true">💸</span>
           <span>Investments</span>
@@ -145,6 +150,7 @@
       <li>
         <a
           aria-current={segment === 'body-mind' ? 'page' : undefined}
+          on:click={() => (show = false)}
           href="/body-mind/">
           <span aria-hidden="true">🏃‍♂️</span>
           <span>Body &amp; Mind</span>
@@ -152,7 +158,10 @@
       </li>
     </ul>
   </nav>
-  <a href="#nav" class="menu">Menu</a>
+  <button
+    on:click={() => (show = !show)}
+    class="menu"
+    aria-label="Menu">☰</button>
   <div class="contact">
     <a target="_blank" rel="noopener" href={`mailto:${t('Text', 'email')}`}>
       <span aria-hidden="true">💌</span>
