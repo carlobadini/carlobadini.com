@@ -1,6 +1,10 @@
 <script>
+  import humanize from "humanize-duration";
   import t from "../get-data";
-  let meditationTime = new Date().getTime() - new Date("2011-03-04").getTime();
+  let meditationTime = humanize(
+    (new Date().getTime() - new Date("2011-03-04").getTime()) / 144,
+    { round: true, units: ["d", "h", "m"] }
+  );
 </script>
 
 <style>
