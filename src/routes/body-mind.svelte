@@ -6,9 +6,6 @@
   h1 {
     margin-top: 0;
   }
-  .text {
-    max-width: 700px;
-  }
 </style>
 
 <svelte:head>

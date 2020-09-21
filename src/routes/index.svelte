@@ -38,7 +38,11 @@
 </svelte:head>
 
 <div class="f">
-  <div><img alt="" src="/carlo.png" /></div>
+  <div>
+    <img
+      alt=""
+      src="https://dl.airtable.com/.attachmentThumbnails/cd676b6954c3ff979c254e9fe8c3ea9c/9c9ead7c" />
+  </div>
   <div>
     <h1>
       {@html t('Text', 'about.title')}

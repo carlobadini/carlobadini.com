@@ -9,9 +9,6 @@
   h2 {
     margin-bottom: 1.5rem;
   }
-  .text {
-    max-width: 700px;
-  }
   blockquote {
     margin: 0;
   }
@@ -55,9 +52,7 @@
     {#each t('Awards') as award}
       <li>
         <div>
-          <div class="img">
-            <img alt="" src={award.fields.Icon[0].url} />
-          </div>
+          <div class="img"><img alt="" src={award.fields.Icon[0].url} /></div>
         </div>
         <div>
           <div>{award.fields.Award}</div>

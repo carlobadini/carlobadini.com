@@ -6,9 +6,6 @@
   h1 {
     margin-top: 0;
   }
-  .text {
-    max-width: 700px;
-  }
   .list li div:last-child div:nth-child(2) {
     opacity: 1;
     margin-bottom: 0;

@@ -6,9 +6,6 @@
   h1 {
     margin-top: 0;
   }
-  .text {
-    max-width: 700px;
-  }
   .list:not(.e) li div:last-child div:nth-child(2) {
     opacity: 1;
     margin-bottom: 0;
@@ -32,7 +29,7 @@
     {@html t('Text', 'learning.subtitle')}
   </p>
   <h2>{t('Text', 'learning.education.title')}</h2>
-  <ul class="list e ">
+  <ul class="list e">
     {#each t('Education') as education}
       <li>
         <div>
@@ -77,9 +74,7 @@
     {#each t('News') as news}
       <li>
         <div>
-          <div class="img">
-            <img alt="" src={news.fields.Icon[0].url} />
-          </div>
+          <div class="img"><img alt="" src={news.fields.Icon[0].url} /></div>
         </div>
         <div>
           <div>{news.fields.Name}</div>
