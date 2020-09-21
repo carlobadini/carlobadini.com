@@ -1,10 +1,15 @@
 <script>
   import t from "../get-data";
+  let meditationTime = new Date().getTime() - new Date("2011-03-04").getTime();
 </script>
 
 <style>
   h1 {
     margin-top: 0;
+  }
+  .big {
+    font-weight: lighter;
+    font-size: 200%;
   }
 </style>
 
@@ -29,6 +34,14 @@
   <p>
     {@html t('Text', 'body.productivity.content')}
   </p>
+  <h2>
+    {@html t('Text', 'body.meditation.title')}
+  </h2>
+  <p>
+    {@html t('Text', 'body.meditation.subtitle')}
+  </p>
+  <div class="big">{meditationTime}</div>
+  <hr />
   <h2>
     {@html t('Text', 'body.sleep.title')}
   </h2>

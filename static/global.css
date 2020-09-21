@@ -131,6 +131,12 @@ iframe {
 
 p,
 .list,
-iframe {
+iframe,
+hr {
   max-width: 700px;
+}
+
+hr {
+  margin: 2rem 0;
+  opacity: 0.5;
 }
