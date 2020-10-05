@@ -47,6 +47,20 @@
   <div class="big">{meditationTime}</div>
   <hr />
   <h2>
+    {@html t('Text', 'body.body.title')}
+  </h2>
+  <p>
+    {@html t('Text', 'body.body.subtitle')}
+  </p>
+  {#each t('Body') as measurement}item{/each}
+  <table>
+    <thead>
+      <tr>
+        <th>1</th>
+      </tr>
+    </thead>
+  </table>
+  <h2>
     {@html t('Text', 'body.sleep.title')}
   </h2>
   <p>

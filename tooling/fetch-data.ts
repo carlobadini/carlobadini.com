@@ -16,6 +16,7 @@ const tables = [
   "Books",
   "Podcasts",
   "News",
+  "Body",
 ];
 
 const airtable = new Airtable({
