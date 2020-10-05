@@ -5,6 +5,7 @@
     (new Date().getTime() - new Date("2011-03-04").getTime()) / 144,
     { round: true, units: ["d", "h", "m"] }
   );
+  let date = t("Body")[t("Body").length - 1].fields.Date;
 </script>
 
 <style>
@@ -52,14 +53,32 @@
   <p>
     {@html t('Text', 'body.body.subtitle')}
   </p>
-  {#each t('Body') as measurement}item{/each}
-  <table>
-    <thead>
-      <tr>
-        <th>1</th>
-      </tr>
-    </thead>
-  </table>
+  {#each t('Body') as measurement}
+    {#if date === measurement.fields.Date}
+      <table>
+        <thead>
+          <tr>
+            <th>Measurement</th>
+            <th>
+              <select bind:value={date}>
+                {#each t('Body') as item}
+                  <option>{item.fields.Date}</option>
+                {/each}
+              </select>
+            </th>
+          </tr>
+        </thead>
+        {#each Object.keys(measurement.fields).filter((key) => key !== 'Date') as field}
+          <tbody>
+            <tr>
+              <td>{field}</td>
+              <td>{measurement.fields[field]}</td>
+            </tr>
+          </tbody>
+        {/each}
+      </table>
+    {/if}
+  {/each}
   <h2>
     {@html t('Text', 'body.sleep.title')}
   </h2>
