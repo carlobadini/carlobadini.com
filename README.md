@@ -2,6 +2,8 @@
 
 This repository contains the source code of Carlo Badini's personal website. It's build using [Sapper](https://github.com/sveltejs/sapper) and [Svelte](https://github.com/sveltejs/svelte) and hosted on GitHub Pages.
 
+[![Build site](https://github.com/carlobadini/carlobadini.com/workflows/Build%20site/badge.svg)](https://github.com/carlobadini/carlobadini.com/actions?query=workflow%3A%22Build+site%22)
+
 ## ⭐️ Getting started
 
 Before the local development server starts, all data is fetched from Airtable, then the site opens at http://localhost:3000.
