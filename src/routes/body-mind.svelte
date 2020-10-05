@@ -5,7 +5,10 @@
     (new Date().getTime() - new Date("2011-03-04").getTime()) / 144,
     { round: true, units: ["d", "h", "m"] }
   );
-  let date = t("Body")[t("Body").length - 1].fields.Date;
+  let date = t("Body").sort(
+    (a, b) =>
+      new Date(b.fields.Date).getTime() - new Date(a.fields.Date).getTime()
+  )[0].fields.Date;
 </script>
 
 <style>
