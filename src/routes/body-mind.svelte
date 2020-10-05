@@ -1,5 +1,6 @@
 <script>
   import humanize from "humanize-duration";
+  import { simple } from "timeago-simple";
   import t from "../get-data";
   let meditationTime = humanize(
     (new Date().getTime() - new Date("2011-03-04").getTime()) / 144,
@@ -65,7 +66,9 @@
             <th>
               <select bind:value={date}>
                 {#each t('Body') as item}
-                  <option>{item.fields.Date}</option>
+                  <option value={item.fields.Date}>
+                    {simple(new Date(item.fields.Date))}
+                  </option>
                 {/each}
               </select>
             </th>
