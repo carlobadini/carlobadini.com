@@ -93,5 +93,5 @@
   </p>
   <iframe
     title="Sleep data"
-    src="https://stethoscope.js.org/embed/?repo=CarloBadini/life&api=oura-sleep&latest=total.weeks&color=%2395389E" />
+    src="https://stethoscope.js.org/embed/?repo=CarloBadini/life&api=oura-sleep&latest=weeks" />
 </div>
