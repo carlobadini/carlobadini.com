@@ -1,15 +1,24 @@
 <script>
   import humanize from "humanize-duration";
-  import { simple } from "timeago-simple";
   import t from "../get-data";
+  const data = t("Body").sort(
+    (a, b) =>
+      new Date(a.fields.Date).getTime() - new Date(b.fields.Date).getTime()
+  );
   let meditationTime = humanize(
     (new Date().getTime() - new Date("2011-03-04").getTime()) / 144,
     { round: true, units: ["d", "h", "m"] }
   );
-  let date = t("Body").sort(
-    (a, b) =>
-      new Date(b.fields.Date).getTime() - new Date(a.fields.Date).getTime()
-  )[0].fields.Date;
+  let date = data[data.length - 1].fields.Date;
+  let prev = null;
+  let next = null;
+
+  $: {
+    const prevIndex = data.findIndex((i) => i.fields.Date === date) - 1;
+    prev = data[prevIndex] ? prevIndex : null;
+    const nextIndex = data.findIndex((i) => i.fields.Date === date) + 1;
+    next = data[nextIndex] ? nextIndex : null;
+  }
 </script>
 
 <style>
@@ -19,6 +28,16 @@
   .big {
     font-weight: lighter;
     font-size: 200%;
+  }
+  .next-prev {
+    padding: 0;
+    background: none;
+    font: inherit;
+    border: none;
+    margin: 0 0.5rem;
+  }
+  .next-prev:last-of-type {
+    margin-right: 0;
   }
 </style>
 
@@ -64,13 +83,20 @@
           <tr>
             <th>Measurement</th>
             <th>
-              <select bind:value={date}>
-                {#each t('Body') as item}
-                  <option value={item.fields.Date}>
-                    {simple(new Date(item.fields.Date))}
-                  </option>
-                {/each}
-              </select>
+              {#if prev}
+                <button
+                  class="next-prev"
+                  on:click={() => (date = data[prev].fields.Date)}
+                  aria-label="Previous">&larr;</button>
+              {/if}
+              <span
+                aria-live="polite">{new Date(date).toLocaleDateString()}</span>
+              {#if next}
+                <button
+                  class="next-prev"
+                  on:click={() => (date = data[next].fields.Date)}
+                  aria-label="Next">&rarr;</button>
+              {/if}
             </th>
           </tr>
         </thead>
